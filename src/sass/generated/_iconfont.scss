@@ -14,8 +14,9 @@ $icon-favorite: "\EA02";
 $icon-information: "\EA03";
 $icon-location: "\EA04";
 $icon-metro: "\EA05";
-$icon-telegram: "\EA06";
-$icon-vk: "\EA07";
+$icon-play: "\EA06";
+$icon-telegram: "\EA07";
+$icon-vk: "\EA08";
 
 
 %icon {
@@ -39,5 +40,6 @@ $icon-vk: "\EA07";
 .icon-information:before { content: $icon-information; }
 .icon-location:before { content: $icon-location; }
 .icon-metro:before { content: $icon-metro; }
+.icon-play:before { content: $icon-play; }
 .icon-telegram:before { content: $icon-telegram; }
 .icon-vk:before { content: $icon-vk; }
