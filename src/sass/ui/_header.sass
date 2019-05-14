@@ -4,11 +4,13 @@
   position: absolute
   top: 0
   left: 0
+  padding-top: 22px
   &__content
     display: flex
     justify-content: space-between
   &__logo
-    padding-left: 32px
+    img
+      padding-right: 32px
     select
       width: 127px
       height: 17px
@@ -16,25 +18,27 @@
       font-size: 16px
       font-weight: normal
       font-style: normal
-      font-stretch: normal
-      line-height: 2.25
-      letter-spacing: normal
       text-align: left
       color: #ffffff
       background: none
   &__entry
     button
       background: none
+      border: 2px solid #27c8ca
+      border-radius: 5px
+      padding: 15px 26px
+      margin-left: 5px
+      &:hover
+        background-image: linear-gradient(to bottom, #42d79f, #26c8cb)
+        border: 2px solid #27c8ca
+      &:first-child
+        border: none
       p
-        width: 138px
-        height: 15px
         font-family: FiraSans
         font-size: 15px
         font-weight: bold
         font-style: normal
-        font-stretch: normal
-        line-height: 2.4
         letter-spacing: normal
         text-align: center
         color: #ffffff
-      
+    
