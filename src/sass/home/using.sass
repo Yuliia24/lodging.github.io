@@ -12,33 +12,20 @@
       font-weight: 500
       text-align: center
       padding-bottom: 83px
-  &__block
-    div
-      font-size: 100px
-      color: #25ce98
-      padding-bottom: 31px
-      text-transform: uppercase
-      background: linear-gradient(to bottom, #25ce98, #26c8cb)
-      -webkit-background-clip: text
-      -webkit-text-fill-color: transparent
-    p
-      font-size: 18px
-      font-weight: 500
-      color: #707984
-      padding-bottom: 50px
-      padding-top: 15px
-      width: 145%
-    b
-      font-size: 16px
-      font-weight: 700
-      color: #3c4450
-    button:first-child
-     box-shadow: 0px 11px 21px 0 rgba(20, 19, 23, 0.09)
-    button
+  .tabs
+    display: flex
+    li.active
+      box-shadow: 0px 11px 21px 0 rgba(20, 19, 23, 0.09)
+    li
       margin-top: 10px
       background: #ffffff
-      border-radius: 
+      border-radius: 2px
       position: relative
+      font-size: 18px
+      color: #3c4450
+      text-align: center
+      padding: 30px 0
+      width: 276px
       &:after
         content: ''
         position: absolute
@@ -47,13 +34,34 @@
         border: 10px solid transparent
         border-left: 11px solid white  
       &:hover
-       box-shadow: 0px 11px 21px 0 rgba(20, 19, 23, 0.09)
-      p
-        font-size: 18px
-        color: #3c4450
-        text-align: center
-        padding: 29px 53px 31px 40px
-        width: 100%
-    
+        box-shadow: 0px 11px 21px 0 rgba(20, 19, 23, 0.09)
+    .tabs__content
+      display: none
+      padding-left: 128px
+      .using__block
+        display: flex
+        strong
+          font-size: 100px
+          font-weight: normal
+          color: #25ce98
+          display: block
+          background-image: linear-gradient(to bottom, #42d79f, #26c8cb), linear-gradient(to bottom, #25ce98, #25ce98)
+          -webkit-background-clip: text
+          background-clip: text
+          -webkit-text-fill-color: transparent
+        &__text
+          padding-left: 41px
+          p
+            font-size: 18px
+            font-weight: 500
+            color: #707984
+            padding-bottom: 50px
+            padding-top: 15px
+          b
+            font-size: 16px
+            font-weight: 700
+            color: #3c4450
+    .tabs__content.active 
+      display: block
         
             

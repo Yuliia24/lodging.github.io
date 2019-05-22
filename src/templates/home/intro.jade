@@ -2,9 +2,34 @@ section.intro
   .container
     .intro__block
       h1 Снять комнату, квартиру или дом
-      form(action="")
-        select(name="home")
-          option(value="Квартира") Квартира
-          option(value="Дом") Дом
-          option(value="Комната") Комната
-        input(type=search placeholder="Метро")
+      form.form
+        .form__line
+          select(name="home")
+            option(value="Квартира") Квартира
+            option(value="Дом") Дом
+            option(value="Комната") Комната
+          input(type="text" placeholder="Метро")
+          .form__block
+            input(type="radio" name="term" id="term1") 
+            label(for="term1").active Долгосрочно
+            input(type="radio" name="term" id="term2")    
+            label(for="term2") Посуточно
+        .form__line
+          .form__block__quantity
+            input(type="radio" name="quantity" id="quantity1")
+            label(for="quantity1").active  1
+            input(type="radio" name="quantity" id="quantity2") 
+            label(for="quantity2") 2
+            input(type="radio" name="quantity" id="quantity3") 
+            label(for="quantity3") 3
+            input(type="radio" name="quantity" id="quantity4") 
+            label(for="quantity4") 4+
+            input(type="radio" name="quantity" id="quantity5") 
+            label(for="quantity5") Студия
+          .form__block__date
+            input(type="number" placeholder="От")
+            input(type="number" placeholder="До")
+            input(type="checkbox" name="deposit" id="deposit1")
+            label(for="deposit1") Без залога
+          .form__block__button
+            input(type="submit" value="Найти")

@@ -10,13 +10,14 @@
 }
 
 $icon-comment: "\EA01";
-$icon-favorite: "\EA02";
-$icon-information: "\EA03";
-$icon-location: "\EA04";
-$icon-metro: "\EA05";
-$icon-play: "\EA06";
-$icon-telegram: "\EA07";
-$icon-vk: "\EA08";
+$icon-down-arrow: "\EA02";
+$icon-favorite: "\EA03";
+$icon-information: "\EA04";
+$icon-location: "\EA05";
+$icon-metro: "\EA06";
+$icon-play: "\EA07";
+$icon-telegram: "\EA08";
+$icon-vk: "\EA09";
 
 
 %icon {
@@ -36,6 +37,7 @@ $icon-vk: "\EA08";
 }
 
 .icon-comment:before { content: $icon-comment; }
+.icon-down-arrow:before { content: $icon-down-arrow; }
 .icon-favorite:before { content: $icon-favorite; }
 .icon-information:before { content: $icon-information; }
 .icon-location:before { content: $icon-location; }
