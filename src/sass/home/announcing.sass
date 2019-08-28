@@ -1,33 +1,52 @@
 .announcing
   position: relative
+  +r(767)
+    padding: 0 20px
   &__background
     position: absolute
     left: 0
     bottom: 0
     z-index: -1
+    +r(767)
+      display: none
   &__background__right
     position: absolute
     z-index: -1
     right: 0
     top: 200px
+    +r(767)
+      display: none
   &__title
     text-align: center
     padding-top: 65px
     padding-bottom: 82px
+    +r(767)
+      padding-top: 40px
+      padding-bottom: 45px
     h2 
       font-size: 36px
       font-weight: 500
       color: #3c4450
+      +r(767)
+        font-size: 30px
+      +r(425)
+        font-size: 25px
     h3
       font-size: 22px
       font-weight: 500
       color: #707984
+      +r(767)
+        font-size: 19px
+      +r(425)
+        font-size: 15px
   &__example
     .announcing__block
       background-color: #ffffff
       border-radius: 5.8px
       box-shadow: 0px 3px 3px 0 rgba(0, 0, 0, 0.1)
       overflow: hidden
+      +r(991)
+        margin-bottom: 15px
     .announcing__block__positison
       padding: 15px
       border-radius: 5.8px
@@ -66,11 +85,15 @@
       display: inline-flex
       padding-top: 15px
       border-top: 2px solid #f2f5fa
+      +r(991)
+        width: 100%
+        display: flex
+        justify-content: space-between
       b
           font-size: 13px
           font-weight: 700
           color: #3c4450
-          padding-right: 22px
+          padding-right: 11px
       a
         text-decoration: none
         display: flex
@@ -80,21 +103,25 @@
           color: #3c4450
           padding-right: 9px 
         i
-          padding: 0 21px 0 16px
+          padding: 0 21px 0 6px
           background-image: linear-gradient(to bottom,#42d79f,#26c8cb)
           font-size: 13px
           color: #7e75bd
           -webkit-background-clip: text
           background-clip: text
           -webkit-text-fill-color: transparent
+          +r(1000)
+            padding: 0 20px 0 2px
   .annoncing__button
     padding-top: 68px
     display: flex
     justify-content: center
+    +r(800)
+      padding-top: 40px
     a
       border: 2px solid #27c8ca
       border-radius: 5px
-      margin-top: 58px
+      margin-top: 38px
       padding: 20px 43px 21px 42px
       font-size: 16px
       font-weight: 700
@@ -102,6 +129,10 @@
       background: #fff
       border-radius: 5px
       text-decoration: none
+      +r(800)
+        margin-top: 28px
+      +r(600)
+        margin-top: 18px
       &:hover
         background-image: linear-gradient(to bottom, #42d79f, #26c8cb)
         color: #ffffff

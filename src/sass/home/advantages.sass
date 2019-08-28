@@ -2,10 +2,15 @@
   padding-top: 90px
   padding-bottom: 61px
   position: relative
+  +r(767)
+    padding-left: 20px
+    padding-right: 20px
   &__background
     position: absolute
     left: 0
     z-index: -1
+    +r(525)
+      display: none
   .advantages__block
     width: 100%
     display: inline-block
@@ -22,10 +27,15 @@
       overflow: hidden
       border-radius: 6px
       position: relative
+      +r(525)
+        height: 350px
+      +r(400)
+        height: 300px
       img
         +object-fit(cover)
         width: 100%
         height: 100%
+        +r(525)
       a
         width: 100%
         height: 100%
@@ -41,6 +51,8 @@
           color: #ffffff
     &__text
       padding-top: 61px
+      +r(525)
+        padding-top: 35px
       h4
         font-size: 36px
         font-weight: 500
@@ -53,6 +65,10 @@
         color: #3c4450
         padding-bottom: 42px
         position: relative
+        +r(525)
+          font-size: 25px
+        +r(400)
+          padding-bottom: 20px
         &::before
           content: ""
           width: 46px
@@ -72,10 +88,21 @@
         text-align: left
         color: #707984
         padding-top: 42px
+        +r(525)
+          padding-top: 30px
+        +r(400)
+          font-size: 13px
+          padding-top: 20px
         &:first-cild
           border-top: 2px solid #42d79f
     &__button
       padding-top: 61px
+      +r(525)
+        padding-top: 40px
+      +r(350)
+        display: flex
+        flex-direction: column
+        padding-top: 20px
       a
         text-decoration: none
         margin-top: 41px
@@ -87,19 +114,27 @@
         font-size: 16px
         font-weight: bold
         color: #3c4450
+        +r(525)
+          font-size: 10px
+        +r(375)
+          padding: 10px 15px 10px 10px
+        +r(350)
+          margin-top: 15px
+          width: 65%
         &:hover
           background: linear-gradient(to bottom, #42d79f, #26c8cb)
           color: #ffffff
           i
-            background: none
-            color: #ffffff !important
+            background-image: none
+            background-color: #ffffff !important
         i
           font-size: 21px
           position: relative
           top: 3px
           background-image: linear-gradient(to bottom, #42d79f, #26c8cb)
           margin-right: 15px
-          color: #7e75bd
           -webkit-background-clip: text
           background-clip: text
           -webkit-text-fill-color: transparent
+          +r(525)
+            font-size: 13px

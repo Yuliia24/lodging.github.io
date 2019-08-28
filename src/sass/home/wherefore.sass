@@ -1,6 +1,12 @@
 .wherefore
   padding-top: 60px
   position: relative
+  padding-left: 20px
+  padding-right: 20px
+  +r(767)
+    padding-top: 40px
+  +r(425)
+    padding-top: 25px
   &__background
     position: absolute
     z-index: -1
@@ -11,14 +17,27 @@
       font-weight: 500
       color: #3c4450
       text-align: center
+      +r(767)
+        font-size: 30px
+      +r(425)
+        font-size: 25px
     h3
       font-size: 22px
       font-weight: 500
       color: #707984
       text-align: center
       padding-bottom: 39px
+      +r(767)
+        padding-bottom: 25px
+        font-size: 19px
+      +r(425)
+        font-size: 15px
   &__block
     padding-top: 54px
+    +r(767)
+      padding-top: 45px
+    +r(425)
+      padding-top: 37px
     a
       text-decoration: none
       .wherefore__block__img
@@ -31,18 +50,27 @@
         display: flex
         justify-content: center
         align-items: center
+        +r(767)
+          min-width: 100px
+          height: 126px
     &__text
       padding-top: 41px
-      padding-left: 17px
+      padding-left: 3px
+      +r(425)
+        padding-top: 27px
       h4
         font-size: 18px
         font-weight: 700
         color: #3c4450
         text-align: left
         padding-bottom: 11px
+        +r(767)
+          font-size: 15px
       p
         font-size: 16px
         font-weight: 500
         line-height: 1.63
         text-align: left
         color: #707984
+        +r(767)
+          font-size: 13px

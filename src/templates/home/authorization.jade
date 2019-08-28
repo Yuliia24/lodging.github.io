@@ -1,0 +1,72 @@
+.bg
+.authorization#entrance
+  .authorization__entrance
+    .authorization__entrance__text
+      h2 Вход
+      a(href="#").close
+        i.icon.icon-close.svg
+    form
+      .form__input
+        input(type="text" placeholder="Электронная почта")
+        i.icon.icon-email.svg
+      .form__input  
+        input(type="text" placeholder="Пароль")
+        i.icon.icon-locked.svg
+      .form__remember
+        input(type="checkbox" name="remember" id="remember" checked)
+        label(for="remember1") Запомнить меня
+        a(href="#recovery" data-pop) Не помню пароль
+      .form__button
+        input(type="submit" value="Авторизоваться")
+    .authorization__registration
+      p Вы здесь в первые?
+      a(href="#singup" data-pop) Зарегистрируйтесь
+  .authorization__quickly
+    p Быстрый вход через социальные сети
+    .quickly__social
+      a.vk(href="#")
+        i.icon.icon-vk.cvg
+      a.fb(href="#")
+        i.icon.icon-facebook-logo.svg
+      a.googl(href="#")
+        i.icon.icon-google-plus.svg
+.authorization#singup
+  .authorization__registrations
+    .authorization__entrance__text
+      h2 Регистрация
+      a(href="#").close
+        i.icon.icon-close.svg
+    form
+      .form__input
+        input(type="text" placeholder="Электронная почта")
+        i.icon.icon-email.svg
+      .form__input
+        input(type="text" placeholder="Пароль")
+        i.icon.icon-locked.svg
+      .form__button
+        input(type="submit" value="Зарегистрироваться")
+    .authorization__rule
+      p Регистрируясь, вы принимаете условия пользовательского соглашения и соглашаетесь на обработку ваших персональных данных
+  .authorization__quickly
+    p Быстрая регистрация через социальные сети
+    .quickly__social
+      a.vk(href="#")
+        i.icon.icon-vk.cvg
+      a.fb(href="#")
+        i.icon.icon-facebook-logo.svg
+      a.googl(href="#")
+        i.icon.icon-google-plus.svg
+
+
+.authorization#recovery
+  .authorization__recovery
+    .authorization__entrance__text
+      h2 Восстановление
+      a(href="#").close
+        i.icon.icon-close.svg
+    form
+      .form__input
+        input(type="text" placeholder="Электронная почта")
+        i.icon.icon-email.svg
+      .form__button
+        input(type="submit" value="Отпрвить пароль")

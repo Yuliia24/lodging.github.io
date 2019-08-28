@@ -1,12 +1,20 @@
 .comment
   padding-top: 120px
   padding-bottom: 132px
+  +r(767)
+    padding: 70px 20px
+  +r(425)
+    padding: 50px 20px
   &__title
     h2
       font-size: 36px
       font-weight: 500
       text-align: center
       color: #3c4450
+      +r(767)
+        font-size: 30px
+      +r(425)
+        font-size: 25px
     h3
       font-size: 22px
       font-weight: 500
@@ -14,9 +22,17 @@
       text-align: center
       color: #707984
       padding-bottom: 5px
+      +r(767)
+        font-size: 19px
+      +r(425)
+        font-size: 15px
   .comment__block
     padding-top: 76px
     display: flex
+    +r(767)
+      padding-top: 50px
+    +r(425)
+      padding-top: 25px
     &__img
       width: 131px
       height: 131px
@@ -25,15 +41,37 @@
       border: 8px solid #ffffff
       background-color: #ffffff
       overflow: hidden
+      +r(767)
+        width: 115px
+        height: 115px
+      +r(425)
+        width: 110px
+        height: 110px
     &__text
       padding-left: 20px
       flex: 1
+      +r(767)
+        padding-left: 15px
+      +r(425)
+        padding-left: 7px
       p
         font-size: 16px
         font-weight: 500
         color: #707984
         padding: 10px 15px 48px 0
+        +r(767)
+          font-size: 14px
+          padding: 10px 15px 40px 0
+        +r(425)
+          font-size: 12px
+          padding: 10px 15px 35px 0
+        +r(370)
+          padding: 10px 15px 23px 0
       b
         font-size: 18px
         font-weight: 700
         color: #3c4450
+        +r(767)
+          font-size: 16px
+        +r(425)
+          font-size: 14px

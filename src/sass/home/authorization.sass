@@ -1,0 +1,272 @@
+.bg
+  background-color: rgba(0, 0, 0, 0.5)
+  position: fixed
+  width: 100%
+  height: 100%
+  left: 0
+  top: 0
+  z-index: 10
+  display: none
+.authorization
+  position: fixed
+  left: 50%
+  top: 50%
+  transform: translate(-50%, -50%)
+  display: none
+  z-index: 11
+  &__entrance
+    max-width: 360px
+    padding: 25px 30px 0 30px
+    border-top-left-radius: 15px
+    border-top-right-radius: 15px
+    background-color: #fff
+    
+    &__text
+      display: flex
+      justify-content: space-between
+      align-items: center
+      padding-bottom: 30px
+      h2
+        font-size: 24px
+        font-weight: 700
+      a
+        background-color: #fff
+        i
+          font-size: 20px
+          color: #bdc6cf
+    .form
+      display: flex
+      flex-direction: column
+      +center
+      &__input
+        display: inline-block
+        justify-content: space-between 
+        position: relative
+        width: 100%
+        input
+          font-size: 14px
+          font-weight: normal
+          color: #e1e8ee
+          margin-bottom: 11px
+          padding: 24px 16px 
+          border: 2px solid #e1e8ee
+          border-radius: 7px
+          width: 100%
+        i
+          position: absolute
+          right: 20px
+          top: 26px
+          color: #e1e8ee
+      &__remember
+        display: flex
+        align-items: center
+        justify-content: space-between
+        padding-top: 7px
+        padding-bottom: 20px
+        input
+          padding: 6px 7px
+        input[type="checkbox"] 
+          display: none
+        input[type="checkbox"] + label::before 
+          color: transparent
+          content: $icon-checked
+          font-family: "iconfont"
+          height: 24px
+          width: 24px
+          font-size: 10px
+          background: #36d1b2
+          border-radius: 2px
+          margin-right: 9px
+          +center
+        input[type="checkbox"]:checked + label::before 
+          color: #ffffff
+        label
+          font-size: 13px
+          font-weight: 500
+          display: flex
+          align-items: center
+        a
+          font-size: 13px
+          color: #36d1b2
+      &__button
+        display: flex
+        justify-content: center
+        input
+          font-size: 16px
+          font-weight: normal
+          color: #ffffff
+          background-image: linear-gradient(to bottom, #42d79f, #26c8cb)
+          text-align: center
+          padding: 20px 0
+          width: 100%
+          border-radius: 7px
+    .authorization__registration
+      padding-top: 18px
+      padding-bottom: 20px
+      display: flex
+      justify-content: center
+      p
+        font-size: 13px
+        padding-right: 3px
+      a
+        font-size: 13px
+        color: #36d1b2
+  &__quickly
+    padding: 25px 0
+    background-color: #f6f8fc
+    border-top: 1px solid #e1e8ee
+    max-width: 360px
+    border-bottom-right-radius: 15px
+    border-bottom-left-radius: 15px
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    p
+      font-size: 15px
+      font-weight: normal
+      color: #94a0aa
+    .quickly__social
+      padding: 22px 0 10px 0
+      display: flex
+      a
+        text-decoration: none 
+        margin-right: 23px
+        i
+          color: #ffffff
+          font-size: 20px
+          width: 44px
+          height: 44px
+          border-radius: 100px
+          overflow: hidden
+          display: flex
+          align-items: center
+          justify-content: center
+      .vk
+        i
+          background-color: #4d76a1
+      .fb
+        i
+          background-color: #3b5998
+      .googl
+        i
+          background-color: #dc4e41
+
+
+
+
+  &__registrations
+    max-width: 360px
+    padding: 25px 30px 0 30px
+    border-top-left-radius: 15px
+    border-top-right-radius: 15px
+    background-color: #fff
+    &__text
+      display: flex
+      justify-content: space-between
+      align-items: center
+      padding-bottom: 30px
+      h2
+        font-size: 24px
+        font-weight: 700
+      a
+        background-color: #fff
+        i
+          font-size: 20px
+          color: #bdc6cf
+    .form
+      display: flex
+      flex-direction: column
+      +center
+      &__input
+        position: relative
+        input
+          font-size: 14px
+          font-weight: normal
+          color: #cad0d4
+          margin-bottom: 11px
+          padding: 24px 16px 
+          border: 2px solid #cad0d4
+          border-radius: 7px
+          width: 100%
+        i
+          position: absolute
+          right: 20px
+          top: 26px
+          color: #e1e8ee
+      &__button
+        display: flex
+        justify-content: center
+        input
+          font-size: 16px
+          font-weight: normal
+          color: #ffffff
+          background-image: linear-gradient(to bottom, #42d79f, #26c8cb)
+          text-align: center
+          padding: 20px 0
+          width: 100%
+          border-radius: 7px
+    .authorization__rule
+      text-align: center
+      padding: 25px 0
+      p
+        font-size: 11px
+        font-weight: 700
+        color: #b4bcc3
+        
+
+
+
+
+
+  &__recovery
+    max-width: 360px
+    padding: 25px 30px
+    border-radius: 15px
+    background-color: #fff
+    min-width: 360px
+    &__text
+      display: flex
+      justify-content: space-between
+      align-items: center
+      padding-bottom: 30px
+      h2
+        font-size: 24px
+        font-weight: 700
+      button
+        background-color: #fff
+        i
+          font-size: 20px
+          color: #bdc6cf
+    .form
+      display: flex
+      flex-direction: column
+      +center
+      &__input
+        position: relative
+        input
+          font-size: 14px
+          font-weight: normal
+          color: #cad0d4
+          margin-bottom: 11px
+          padding: 24px 16px 
+          border: 2px solid #cad0d4
+          border-radius: 7px
+          width: 100%
+        i
+          position: absolute
+          right: 20px
+          top: 26px
+          color: #e1e8ee
+      &__button
+        display: flex
+        justify-content: center
+        input
+          font-size: 16px
+          font-weight: normal
+          color: #ffffff
+          background-image: linear-gradient(to bottom, #42d79f, #26c8cb)
+          text-align: center
+          padding: 20px 0
+          width: 100%
+          border-radius: 7px

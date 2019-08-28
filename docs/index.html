@@ -17,16 +17,12 @@
       <header class="header">
         <div class="container">
           <div class="header__content">
-            <div class="header__logo"><img src="./img/logo.png"><select>
+            <div class="header__logo"><a href="index.html"> <img src="./img/logo.png"></a><select>
                 <option value="Санкт-Петербург">Санкт-Петербург</option>
                 <option value="Москва">Москва</option>
                 <option value="Ейск">Ейск</option>
               </select></div>
-            <div class="header__entry"><button>
-                <p>Вход</p>
-              </button><button>
-                <p>Подать объявление</p>
-              </button></div>
+            <div class="header__entry"><a href="#entrance" data-pop>Вход</a><a href="ads.html">Подать объявление</a></div>
           </div>
         </div>
       </header>
@@ -40,13 +36,14 @@
                   <option value="Квартира">Квартира</option>
                   <option value="Дом">Дом</option>
                   <option value="Комната">Комната</option>
-                </select><input type="text" placeholder="Метро">
-                <div class="form__block"><input type="radio" name="term" id="term1"><label for="term1" class="active">Долгосрочно</label><input type="radio" name="term" id="term2"><label for="term2">Посуточно</label></div>
+                </select>
+                <div class="form__input"><input type="text" placeholder="Метро"></div>
+                <div class="form__block"><input type="radio" name="term" id="term1" checked><label for="term1">Долгосрочно</label><input type="radio" name="term" id="term2"><label for="term2">Посуточно</label></div>
               </div>
               <div class="form__line">
-                <div class="form__block__quantity"><input type="radio" name="quantity" id="quantity1"><label for="quantity1" class="active"> 1</label><input type="radio" name="quantity" id="quantity2"><label for="quantity2">2</label><input type="radio" name="quantity" id="quantity3"><label for="quantity3">3</label><input type="radio" name="quantity" id="quantity4"><label for="quantity4">4+</label><input type="radio" name="quantity" id="quantity5"><label for="quantity5">Студия</label></div>
-                <div class="form__block__date"><input type="number" placeholder="От"><input type="number" placeholder="До"><input type="checkbox" name="deposit" id="deposit1"><label for="deposit1">Без залога</label></div>
-                <div class="form__block__button"><input type="submit" value="Найти"></div>
+                <div class="form__quantity"><input type="radio" name="quantity" id="quantity1" checked><label for="quantity1">1</label><input type="radio" name="quantity" id="quantity2"><label for="quantity2">2</label><input type="radio" name="quantity" id="quantity3"><label for="quantity3">3</label><input type="radio" name="quantity" id="quantity4"><label for="quantity4">4+</label><input type="radio" name="quantity" id="quantity5"><label for="quantity5">Студия</label></div>
+                <div class="form__date"><input type="number" placeholder="От"><input type="number" placeholder="До"><input type="checkbox" name="deposit" id="deposit1" checked><label for="deposit1">Без залога</label></div>
+                <div class="form__button"><input type="submit" value="Найти"></div>
               </div>
             </form>
           </div>
@@ -61,7 +58,7 @@
               <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
               <p>Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.</p>
             </div>
-            <div class="advantages__block__button"><a href="#"><i class="icon icon-telegram"></i>Канал в телеграме</a><a href="#"> <i class="icon icon-vk"></i>Группа вконтакте</a></div>
+            <div class="advantages__block__button"><a href="#" class="qwe"><i class="icon icon-telegram"></i>Канал в телеграме</a><a href="#" class="zxc"> <i class="icon icon-vk"></i>Группа вконтакте</a></div>
           </div>
         </div>
       </section>
@@ -71,7 +68,7 @@
             <h2>Почему мы?</h2>
             <h3>Бла-бла-бла какой неистово прикольный текст</h3>
             <div class="row">
-              <div class="col-md-4">
+              <div class="col-md-4 col-sm-6 col-xs-12">
                 <div class="wherefore__block"><a href="#">
                     <div class="wherefore__block__img"><img src="./img/Search.png" alt=""></div>
                     <div class="wherefore__block__text">
@@ -80,7 +77,7 @@
                     </div>
                   </a></div>
               </div>
-              <div class="col-md-4">
+              <div class="col-md-4 col-sm-6 col-xs-12">
                 <div class="wherefore__block"><a href="#">
                     <div class="wherefore__block__img"><img src="./img/men.png" alt=""></div>
                     <div class="wherefore__block__text">
@@ -89,7 +86,7 @@
                     </div>
                   </a></div>
               </div>
-              <div class="col-md-4">
+              <div class="col-md-4 col-sm-6 col-xs-12">
                 <div class="wherefore__block"><a href="#">
                     <div class="wherefore__block__img"><img src="./img/comments.png" alt=""></div>
                     <div class="wherefore__block__text">
@@ -98,7 +95,7 @@
                     </div>
                   </a></div>
               </div>
-              <div class="col-md-4">
+              <div class="col-md-4 col-sm-6 col-xs-12">
                 <div class="wherefore__block"><a href="#">
                     <div class="wherefore__block__img"><img src="./img/arms.png" alt=""></div>
                     <div class="wherefore__block__text">
@@ -107,7 +104,7 @@
                     </div>
                   </a></div>
               </div>
-              <div class="col-md-4">
+              <div class="col-md-4 col-sm-6 col-xs-12">
                 <div class="wherefore__block"><a href="#">
                     <div class="wherefore__block__img"><img src="./img/lamp.png" alt=""></div>
                     <div class="wherefore__block__text">
@@ -116,7 +113,7 @@
                     </div>
                   </a></div>
               </div>
-              <div class="col-md-4">
+              <div class="col-md-4 col-sm-6 col-xs-12">
                 <div class="wherefore__block"><a href="#">
                     <div class="wherefore__block__img"><img src="./img/wineglass.png" alt=""></div>
                     <div class="wherefore__block__text">
@@ -185,7 +182,7 @@
           </div>
           <div class="announcing__example">
             <div class="row">
-              <div class="col-md-3">
+              <div class="col-md-3 col-sm-6 col-xs-12">
                 <div class="announcing__block"><a href="https://placeholder.com/261x137"><img src="https://via.placeholder.com/261x137/36d1b2.png" alt=""></a>
                   <div class="announcing__block__positison"><a href="#">
                       <h4>Комната в аренду в 6-комнатной квартире</h4>
@@ -207,7 +204,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-md-3">
+              <div class="col-md-3 col-sm-6 col-xs-12">
                 <div class="announcing__block"><a href="https://placeholder.com/261x137"><img src="https://via.placeholder.com/261x137/36d1b2.png" alt=""></a>
                   <div class="announcing__block__positison"><a href="#">
                       <h4>Комната в аренду в 6-комнатной квартире</h4>
@@ -229,7 +226,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-md-3">
+              <div class="col-md-3 col-sm-6 col-xs-12">
                 <div class="announcing__block"><a href="https://placeholder.com/261x137"><img src="https://via.placeholder.com/261x137/36d1b2.png" alt=""></a>
                   <div class="announcing__block__positison"><a href="#">
                       <h4>Комната в аренду в 6-комнатной квартире</h4>
@@ -251,7 +248,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-md-3">
+              <div class="col-md-3 col-sm-6 col-xs-12">
                 <div class="announcing__block"><a href="https://placeholder.com/261x137"><img src="https://via.placeholder.com/261x137/36d1b2.png" alt=""></a>
                   <div class="announcing__block__positison"><a href="#">
                       <h4>Комната в аренду в 6-комнатной квартире</h4>
@@ -285,7 +282,7 @@
             <h3>Мы очень креативные, хорошие и добрые</h3>
           </div>
           <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-6 col-xs-12">
               <div class="comment__block">
                 <div class="comment__block__img"><img src="./img/fot.png" alt="#"></div>
                 <div class="comment__block__text">
@@ -293,7 +290,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-6 col-xs-12">
               <div class="comment__block">
                 <div class="comment__block__img"><img src="./img/fot.png" alt="#"></div>
                 <div class="comment__block__text">
@@ -301,7 +298,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-6 col-xs-12">
               <div class="comment__block">
                 <div class="comment__block__img"><img src="./img/fot.png" alt="#"></div>
                 <div class="comment__block__text">
@@ -309,7 +306,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-6 col-xs-12">
               <div class="comment__block">
                 <div class="comment__block__img"><img src="./img/fot.png" alt="#"></div>
                 <div class="comment__block__text">
@@ -320,52 +317,85 @@
           </div>
         </div>
       </section>
+      <div class="bg"></div>
+      <div id="entrance" class="authorization">
+        <div class="authorization__entrance">
+          <div class="authorization__entrance__text">
+            <h2>Вход</h2><a href="#" class="close"><i class="icon icon-close svg"></i></a>
+          </div>
+          <form>
+            <div class="form__input"><input type="text" placeholder="Электронная почта"><i class="icon icon-email svg"></i></div>
+            <div class="form__input"> <input type="text" placeholder="Пароль"><i class="icon icon-locked svg"></i></div>
+            <div class="form__remember"><input type="checkbox" name="remember" id="remember" checked><label for="remember1">Запомнить меня</label><a href="#recovery" data-pop>Не помню пароль</a></div>
+            <div class="form__button"><input type="submit" value="Авторизоваться"></div>
+          </form>
+          <div class="authorization__registration">
+            <p>Вы здесь в первые?</p><a href="#singup" data-pop>Зарегистрируйтесь</a>
+          </div>
+        </div>
+        <div class="authorization__quickly">
+          <p>Быстрый вход через социальные сети</p>
+          <div class="quickly__social"><a href="#" class="vk"><i class="icon icon-vk cvg"></i></a><a href="#" class="fb"><i class="icon icon-facebook-logo svg"></i></a><a href="#" class="googl"><i class="icon icon-google-plus svg"></i></a></div>
+        </div>
+      </div>
+      <div id="singup" class="authorization">
+        <div class="authorization__registrations">
+          <div class="authorization__entrance__text">
+            <h2>Регистрация</h2><a href="#" class="close"><i class="icon icon-close svg"></i></a>
+          </div>
+          <form>
+            <div class="form__input"><input type="text" placeholder="Электронная почта"><i class="icon icon-email svg"></i></div>
+            <div class="form__input"><input type="text" placeholder="Пароль"><i class="icon icon-locked svg"></i></div>
+            <div class="form__button"><input type="submit" value="Зарегистрироваться"></div>
+          </form>
+          <div class="authorization__rule">
+            <p>Регистрируясь, вы принимаете условия пользовательского соглашения и соглашаетесь на обработку ваших персональных данных</p>
+          </div>
+        </div>
+        <div class="authorization__quickly">
+          <p>Быстрая регистрация через социальные сети</p>
+          <div class="quickly__social"><a href="#" class="vk"><i class="icon icon-vk cvg"></i></a><a href="#" class="fb"><i class="icon icon-facebook-logo svg"></i></a><a href="#" class="googl"><i class="icon icon-google-plus svg"></i></a></div>
+        </div>
+      </div>
+      <div id="recovery" class="authorization">
+        <div class="authorization__recovery">
+          <div class="authorization__entrance__text">
+            <h2>Восстановление</h2><a href="#" class="close"><i class="icon icon-close svg"></i></a>
+          </div>
+          <form>
+            <div class="form__input"><input type="text" placeholder="Электронная почта"><i class="icon icon-email svg"></i></div>
+            <div class="form__button"><input type="submit" value="Отпрвить пароль"></div>
+          </form>
+        </div>
+      </div>
       <footer class="footer">
         <div class="container">
           <div class="footer__content">
-            <div class="row">
-              <div class="col-md-3">
-                <div class="footer__block"><a href="#"><img src="./img/logo__footer.png" alt=""></a></div>
-              </div>
-              <div class="col-md-3">
-                <div class="footer__block"><b>Разделы сайта</b><a href="#">
-                    <p>Найти квартиру</p>
-                  </a><a href="#">
-                    <p>Сдать квартиру</p>
-                  </a><a href="#">
-                    <p>Вопросы и ответы</p>
-                  </a></div>
-              </div>
-              <div class="col-md-3">
-                <div class="footer__block"><b>Информация</b><a href="#">
-                    <p>Пользовательское соглашение</p>
-                  </a><a href="#">
-                    <p>Обработка персональных данных</p>
-                  </a><a href="#">
-                    <p>Договор аренды</p>
-                  </a></div>
-              </div>
-              <div class="col-md-3">
-                <div class="footer__block"><b>Мы в соцсетях</b><i class="icon icon-telegram svg"></i><i class="icon icon-vk svg"></i></div>
-              </div>
+            <div class="footer__block"><a href="#"><img src="./img/logo__footer.png" alt=""></a></div>
+            <div class="footer__block"><b>Разделы сайта</b><a href="#">
+                <p>Найти квартиру</p>
+              </a><a href="#">
+                <p>Сдать квартиру</p>
+              </a><a href="#">
+                <p>Вопросы и ответы</p>
+              </a></div>
+            <div class="footer__block"><b>Информация</b><a href="#">
+                <p>Пользовательское соглашение</p>
+              </a><a href="#">
+                <p>Обработка персональных данных</p>
+              </a><a href="#">
+                <p>Договор аренды</p>
+              </a></div>
+            <div class="footer__block"><b>Мы в соцсетях</b>
+              <div class="block__network"><a href="#" class="network__icon"><i class="icon icon-telegram svg"></i></a><a href="#" class="network__icon"><i class="icon icon-vk svg"></i></a></div>
             </div>
           </div>
           <div class="footer__connection">
-            <div class="row">
-              <div class="col-md-3">
-                <div class="connection__text"></div>
-              </div>
-              <div class="col-md-3">
-                <div class="connection__text"><a href="#">hello@gnezdo.ru</a></div>
-              </div>
-              <div class="col-md-3">
-                <div class="connection__text"><a href="#">8 (981) 783-45-76</a></div>
-              </div>
-              <div class="col-md-3">
-                <div class="connection__text">
-                  <p>© 2018 «Уютное гнездышко»</p>
-                </div>
-              </div>
+            <div class="connection__text"></div>
+            <div class="connection__text"><a href="#">hello@gnezdo.ru</a></div>
+            <div class="connection__text"><a href="#">8 (981) 783-45-76</a></div>
+            <div class="connection__text">
+              <p>© 2018 «Уютное гнездышко»</p>
             </div>
           </div>
         </div>

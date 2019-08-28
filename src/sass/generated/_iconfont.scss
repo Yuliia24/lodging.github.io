@@ -9,15 +9,21 @@
   font-style: normal;
 }
 
-$icon-comment: "\EA01";
-$icon-down-arrow: "\EA02";
-$icon-favorite: "\EA03";
-$icon-information: "\EA04";
-$icon-location: "\EA05";
-$icon-metro: "\EA06";
-$icon-play: "\EA07";
-$icon-telegram: "\EA08";
-$icon-vk: "\EA09";
+$icon-checked: "\EA01";
+$icon-close: "\EA02";
+$icon-comment: "\EA03";
+$icon-down-arrow: "\EA04";
+$icon-email: "\EA05";
+$icon-facebook-logo: "\EA06";
+$icon-favorite: "\EA07";
+$icon-google-plus: "\EA08";
+$icon-information: "\EA09";
+$icon-location: "\EA0A";
+$icon-locked: "\EA0B";
+$icon-metro: "\EA0C";
+$icon-play: "\EA0D";
+$icon-telegram: "\EA0E";
+$icon-vk: "\EA0F";
 
 
 %icon {
@@ -36,11 +42,17 @@ $icon-vk: "\EA09";
   display: inline-block;
 }
 
+.icon-checked:before { content: $icon-checked; }
+.icon-close:before { content: $icon-close; }
 .icon-comment:before { content: $icon-comment; }
 .icon-down-arrow:before { content: $icon-down-arrow; }
+.icon-email:before { content: $icon-email; }
+.icon-facebook-logo:before { content: $icon-facebook-logo; }
 .icon-favorite:before { content: $icon-favorite; }
+.icon-google-plus:before { content: $icon-google-plus; }
 .icon-information:before { content: $icon-information; }
 .icon-location:before { content: $icon-location; }
+.icon-locked:before { content: $icon-locked; }
 .icon-metro:before { content: $icon-metro; }
 .icon-play:before { content: $icon-play; }
 .icon-telegram:before { content: $icon-telegram; }
