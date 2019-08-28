@@ -25,3 +25,7 @@ $('[data-pop]').on('click', function() {
   $(link).fadeIn();
   $('.bg').fadeIn();
 });
+
+$('.qwe').on('click', function() {
+  .addClass('')
+});
