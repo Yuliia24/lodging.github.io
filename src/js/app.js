@@ -26,6 +26,6 @@ $('[data-pop]').on('click', function() {
   $('.bg').fadeIn();
 });
 
-$('.qwe').on('click', function() {
-  .addClass('')
-});
+// $('.qwe').on('click', function() {
+// .addClass('')
+// });
